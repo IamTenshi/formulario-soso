@@ -1,0 +1,13 @@
+//colores;
+$dark-gray: rgb(128, 128, 128);
+$light-gray: rgb(167, 167, 167);
+$green: rgb(0, 149, 0);
+$red: rgb(193, 0, 0);
+
+//mixins
+@mixin flex($justify-content: center, $align-items: center, $flex-direction: column) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}

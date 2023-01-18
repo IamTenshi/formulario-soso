@@ -1,0 +1,99 @@
+main {
+    width: 30vw;
+    padding: 10px;
+    background-color: $dark-gray;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+form {
+    width: 99%;
+    margin: auto;
+    padding: 2em;
+    background-color: $light-gray;
+    @include flex(center, flex-start);
+}
+
+input[name^="nom"] {
+    margin-left: 6.25em;
+}
+
+input[name^="ape"] {
+    margin-left: 6em;
+}
+
+input[name="dni"] {
+    margin-left: 8em;
+}
+
+input[name^="fe"] {
+    margin-left: 4.75em;
+    margin-bottom: 1em;
+}
+
+input[name="calle"] {
+    width: 125px;
+    margin-left: 2em;
+}
+
+input[name="nro"] {
+    width: 50px;
+    margin-left: 1em;
+}
+
+input[name^="local"] {
+    margin-left: 5.25em;
+}
+
+label {
+    margin-bottom: .25em;
+
+    &:nth-child(6){
+        margin-bottom: -1em;
+    }
+
+    &:nth-child(7){
+        position: relative;
+        left: 13.75em;
+        bottom: .3em;
+        margin-bottom: 0;
+    }
+}
+
+aside {
+    position: absolute;
+    background-color: $dark-gray;
+    height: 40.5vh;
+    width: 5vw;
+    left: 25.5em;
+    padding: .7em;
+    
+    div {
+        background-color: $light-gray;
+        height: 100%;
+        @include flex(space-around);
+    }
+}
+
+
+.icons {
+    height: 3em;
+    width: 3em;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.check-circle-fill {
+    color: $green;
+}
+
+.x-circle-fill {
+    color: $red;
+}
+
+#enviar, #cancelar, #lista {
+    background-color: transparent;
+    border: none;
+}
